@@ -152,7 +152,7 @@ function finalizeSelection() {
     if (correctKeywords.includes(selectedKeyword)) {
         topicScores[selectedTopic] += 10;
         correctCounts[selectedTopic] += 1;
-        feedback.innerHTML = `<p style='color:green;'>✅ Correct! <a href='#' style='color:green;'>Google Search Result</a></p>`;
+        feedback.innerHTML = `<p style='color:green;'>✅ Correct! </p>`;
     } else {
         topicScores[selectedTopic] -= 5;
         wrongCounts[selectedTopic] += 1;
