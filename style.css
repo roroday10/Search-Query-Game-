@@ -1,0 +1,99 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+/* Title and Score */
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Centered Content */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Search Bar Styling */
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    min-height: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons Styling */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Primary Buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Topic and Prompt Buttons */
+#topics-list button, #prompts-list button, #keywords-list button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+/* Disabled Button */
+button.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Feedback */
+#feedback {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Correct and Incorrect Answer Styling */
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}

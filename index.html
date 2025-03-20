@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <button onclick="toggleInstructions()">How to Play</button>
+    <div id="instructions" style="display: none;">
+        <h2>How to Play</h2>
+    <p>1️⃣ Select a topic to start.</p>
+    <p>2️⃣ Choose a prompt (Who, What, How, When, etc.).</p>
+    <p>3️⃣ Select the correct keywords to form a meaningful search query.</p>
+    <p>4️⃣ Click "Search" to check your answer.</p>
+    <p>✅ Correct choices will be locked in, and the game will continue automatically.</p>
+    <p>❌ Incorrect words will be greyed out, but you can keep trying.</p>
+    <p>🔄 Click "Reset" to restart the game.</p>
+</div>
+    <title>Search Query Game</title>
+
+    <link rel="stylesheet" href="style.css">  <!-- Link to CSS file -->
+</head>
+<body>
+
+    <!-- Centering all content -->
+    <div align="center">
+        <h1>Search Query Game</h1>
+        <div id="score">Score: 0</div>
+
+        <div id="topic-selection" class="container">
+            <h2>Select a Topic:</h2>
+            <div id="topics-list"></div>
+        </div>
+
+        <div id="search-selection" class="container" style="display:none;">
+            <h2>Current Topic: <span id="current-topic">None</span></h2>
+            <h2>Select a Prompt:</h2>
+            <div id="prompts-list"></div>
+
+            <h2>Select Keywords:</h2>
+            <div id="keywords-list"></div>
+
+            <!-- KEEP ONLY ONE SEARCH BAR -->
+            <h3>Search Query:</h3>
+            <input type="text" id="search-bar" readonly>
+            <br>
+
+            <button onclick="finalizeSelection()">Search</button>
+            <button onclick="resetGame()">Reset</button>
+            <div id="feedback"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>  <!-- Link to JavaScript file -->
+</body>
+</html>
